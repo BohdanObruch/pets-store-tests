@@ -1,0 +1,73 @@
+name: Normal Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Cache Poetry dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.cache/pypoetry
+          ~/.cache/pip
+        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-poetry-
+    - run: |
+        pip install --no-cache-dir poetry \
+        && poetry config virtualenvs.create false \
+        && poetry install --no-interaction --no-ansi
+
+    - name: Run tests
+      env:
+        PROD: ${{ secrets.PROD }}
+      run: poetry run pytest --alluredir=allure-results
+
+    - name: Upload Allure results
+      uses: actions/upload-artifact@v4
+      with:
+        name: allure-results
+        path: allure-results
+
+    - name: Deploy Allure report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./allure-results
+
+#    - name: Send notification to email
+#      uses: dawidd6/action-send-mail@v3
+#      with:
+#        connection_url: ${{ secrets.MAIL_CONNECTION }}
+#        subject: GitHub Actions Test Results
+#        to: user@example.com
+#        from: 'GitHub Actions <actions@example.com>'
+#        body: The tests have completed. Check the Allure report for details.
+#        attachments: allure-results
+#
+#    - name: Send notification to Telegram
+#      uses: appleboy/telegram-action@v0.2.0
+#      with:
+#        to: ${{ secrets.TELEGRAM_TO }}
+#        token: ${{ secrets.TELEGRAM_TOKEN }}
+#        message: The tests have completed. Check the Allure report for details.

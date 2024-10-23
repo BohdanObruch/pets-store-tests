@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pets-store-tests"
+version = "0.1.0"
+description = ""
+authors = ["Bohdan Obruch <bodan1992@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+pydantic = "^2.9.2"
+pytest = "^8.3.3"
+allure-pytest = "^2.13.5"
+python-dotenv = "^1.0.1"
+
+[tool.pytest.ini_options]
+addopts = """
+        --clean-alluredir
+        --alluredir=allure-results
+        --log-date-format="%Y-%m-%d %H:%M:%S"
+        --log-format="%(asctime)s %(levelname)s %(message)s"
+        --log-cli-level=INFO
+        """
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
