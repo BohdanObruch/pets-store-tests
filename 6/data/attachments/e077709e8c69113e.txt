@@ -1,0 +1,10 @@
+2024-10-23 17:34:51 INFO Request: PROD/pet/1/uploadImage
+2024-10-23 17:34:51 INFO INFO Request body: --764da3e3ff4243c026e84e41e78af39e
+Content-Disposition: form-data; name="file"; filename="test.jpg"
+
+
+--764da3e3ff4243c026e84e41e78af39e--
+
+2024-10-23 17:34:51 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '144', 'Content-Type': 'multipart/form-data; boundary=764da3e3ff4243c026e84e41e78af39e'}
+2024-10-23 17:34:51 INFO Response code 200
+2024-10-23 17:34:51 INFO Response: {"code":200,"type":"unknown","message":"additionalMetadata: null\nFile uploaded to ./test.jpg, 0 bytes"}
