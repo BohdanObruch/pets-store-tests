@@ -27,11 +27,6 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y docker-compose
 
-    - name: Print PROD environment variable
-      run: echo $PROD
-      env:
-        PROD: ${{ secrets.PROD }}
-
     - name: Build and run Docker Compose
       env:
         PROD: ${{ secrets.PROD }}

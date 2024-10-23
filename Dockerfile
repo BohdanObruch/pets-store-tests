@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir poetry \
 
 # Set environment variable
 ARG PROD
-ENV url=$PROD
+ENV PROD=$PROD
 
 # Run pytest when the container launches
 CMD ["poetry", "run", "pytest", "--alluredir=allure-results"]
