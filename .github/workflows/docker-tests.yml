@@ -33,7 +33,7 @@ jobs:
     - name: Run tests in Docker
       env:
         PROD: ${{ secrets.PROD }}
-      run: docker-compose exec app pytest --alluredir=allure-results
+      run: docker-compose exec -T app pytest --alluredir=allure-results
 
     - name: Upload Allure results
       uses: actions/upload-artifact@v4
@@ -45,6 +45,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
         publish_dir: ./allure-results
 #
 #    - name: Send notification to email
