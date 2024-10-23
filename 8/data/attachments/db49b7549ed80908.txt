@@ -1,0 +1,4 @@
+2024-10-23 18:00:31 INFO Request: PROD/store/order/1
+2024-10-23 18:00:31 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'}
+2024-10-23 18:00:31 INFO Response code 404
+2024-10-23 18:00:31 INFO Response: {"code":404,"type":"unknown","message":"Order Not Found"}
