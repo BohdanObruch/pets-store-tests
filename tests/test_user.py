@@ -27,6 +27,7 @@ class TestUser:
         response = self.user_page.update_user("user1", update_user)
         assert response.status_code == 200
 
+    @pytest.mark.order("last")
     def test_delete_user(self):
         response = self.user_page.delete_user("user1")
         assert response.status_code == 200
