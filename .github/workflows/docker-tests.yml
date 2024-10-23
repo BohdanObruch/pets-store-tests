@@ -28,6 +28,8 @@ jobs:
         sudo apt-get install -y docker-compose
 
     - name: Build and run Docker Compose
+      env:
+        PROD: ${{ secrets.PROD }}
       run: docker-compose up --build -d
 
     - name: Run tests in Docker
@@ -47,13 +49,3 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./allure-results
-#
-#    - name: Send notification to email
-#      uses: dawidd6/action-send-mail@v3
-#      with:
-#        connection_url: ${{ secrets.MAIL_CONNECTION }}
-#        subject: GitHub Actions Test Results
-#        to: user@example.com
-#        from: 'GitHub Actions <actions@example.com>'
-#        body: The tests have completed. Check the Allure report for details.
-#        attachments: allure-results
