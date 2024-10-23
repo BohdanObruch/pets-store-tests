@@ -22,7 +22,6 @@ class TestStore:
         order = self.store_page.validate(Order, response)
         assert order.id == 1
 
-    @pytest.mark.order("last")
     def test_delete_order(self):
         response = self.store_page.delete_order(1)
         assert response.status_code == 200

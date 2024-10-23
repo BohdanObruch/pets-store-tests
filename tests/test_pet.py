@@ -29,7 +29,6 @@ class TestPet:
         pet = self.pet_page.validate(Pet, response)
         assert pet.id == 1
 
-    @pytest.mark.order("last")
     def test_delete_pet(self):
         response = self.pet_page.delete_pet(1)
         assert response.status_code == 200
