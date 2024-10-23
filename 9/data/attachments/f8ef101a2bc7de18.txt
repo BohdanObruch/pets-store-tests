@@ -1,1 +1,0 @@
-PROD/pet/findByTags?tags=tag1%2Ctag2
