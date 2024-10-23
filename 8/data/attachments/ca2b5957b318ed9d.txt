@@ -1,4 +1,0 @@
-2024-10-23 18:00:29 INFO Request: PROD/store/order/1
-2024-10-23 18:00:29 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
-2024-10-23 18:00:29 INFO Response code 200
-2024-10-23 18:00:29 INFO Response: {"id":1,"petId":1,"quantity":1,"shipDate":"2023-10-01T00:00:00.000+0000","status":"placed","complete":true}
