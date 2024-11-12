@@ -1,4 +1,0 @@
-2024-11-11 01:39:19 INFO Request: PROD/user/logout
-2024-11-11 01:39:19 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
-2024-11-11 01:39:19 INFO Response code 200
-2024-11-11 01:39:19 INFO Response: {"code":200,"type":"unknown","message":"ok"}
