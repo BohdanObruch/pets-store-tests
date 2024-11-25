@@ -1,0 +1,5 @@
+2024-11-25 01:46:07 INFO Request: PROD/user
+2024-11-25 01:46:07 INFO INFO Request body: {"id": 1, "username": "user1", "firstName": "John", "lastName": "Doe", "email": "john.doe@example.com", "password": "password1", "phone": "123-456-7890", "userStatus": 1}
+2024-11-25 01:46:07 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '170', 'Content-Type': 'application/json'}
+2024-11-25 01:46:07 INFO Response code 200
+2024-11-25 01:46:07 INFO Response: {"code":200,"type":"unknown","message":"1"}
