@@ -1,0 +1,4 @@
+2024-11-29 01:45:38 INFO Request: PROD/store/inventory
+2024-11-29 01:45:38 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
+2024-11-29 01:45:38 INFO Response code 200
+2024-11-29 01:45:38 INFO Response: {"sold":1,"pending":2,"available":6}
