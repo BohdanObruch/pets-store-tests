@@ -1,0 +1,5 @@
+2024-12-08 01:54:32 INFO Request: PROD/store/order
+2024-12-08 01:54:32 INFO INFO Request body: {"id": 1, "petId": 1, "quantity": 1, "shipDate": "2023-10-01T00:00:00.000Z", "status": "placed", "complete": true}
+2024-12-08 01:54:32 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '114', 'Content-Type': 'application/json'}
+2024-12-08 01:54:32 INFO Response code 200
+2024-12-08 01:54:32 INFO Response: {"id":1,"petId":1,"quantity":1,"shipDate":"2023-10-01T00:00:00.000+0000","status":"placed","complete":true}
