@@ -1,4 +1,0 @@
-2024-12-08 01:54:35 INFO Request: PROD/user/user1
-2024-12-08 01:54:35 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'}
-2024-12-08 01:54:35 INFO Response code 200
-2024-12-08 01:54:35 INFO Response: {"code":200,"type":"unknown","message":"user1"}
