@@ -1,1 +1,0 @@
-{'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '144', 'Content-Type': 'multipart/form-data; boundary=42d5c9d2ba094960ef9477bf73d593ab'}
