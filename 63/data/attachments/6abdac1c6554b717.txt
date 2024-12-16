@@ -1,5 +1,0 @@
-2024-12-15 01:54:19 INFO Request: PROD/user/createWithArray
-2024-12-15 01:54:19 INFO INFO Request body: [{"id": 2, "username": "user2", "firstName": "Jane", "lastName": "Doe", "email": "jane.doe@example.com", "password": "password2", "phone": "123-456-7891", "userStatus": 1}, {"id": 3, "username": "user3", "firstName": "Jim", "lastName": "Beam", "email": "jim.beam@example.com", "password": "password3", "phone": "123-456-7892", "userStatus": 1}]
-2024-12-15 01:54:19 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '344', 'Content-Type': 'application/json'}
-2024-12-15 01:54:19 INFO Response code 200
-2024-12-15 01:54:19 INFO Response: {"code":200,"type":"unknown","message":"ok"}
