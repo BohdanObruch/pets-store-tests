@@ -1,4 +1,0 @@
-2024-12-19 01:44:45 INFO Request: PROD/pet/1
-2024-12-19 01:44:45 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'}
-2024-12-19 01:44:45 INFO Response code 200
-2024-12-19 01:44:45 INFO Response: {"code":200,"type":"unknown","message":"1"}
