@@ -10,7 +10,7 @@ COPY . /app
 # Install Poetry and dependencies
 RUN pip install --no-cache-dir poetry \
     && poetry config virtualenvs.create false \
-    && poetry install --no-interaction --no-ansi
+    && poetry install --no-interaction --no-ansi --no-root
 
 # Set environment variable
 ARG PROD
