@@ -1,4 +1,0 @@
-2025-01-12 01:47:09 INFO Request: PROD/store/inventory
-2025-01-12 01:47:09 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
-2025-01-12 01:47:09 INFO Response code 200
-2025-01-12 01:47:09 INFO Response: {"sold":1,"pending":2,"available":6}

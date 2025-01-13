@@ -1,0 +1,4 @@
+2025-01-13 01:43:42 INFO Request: PROD/user/login?username=user1&password=password1
+2025-01-13 01:43:42 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
+2025-01-13 01:43:42 INFO Response code 200
+2025-01-13 01:43:42 INFO Response: {"code":200,"type":"unknown","message":"logged in user session:1736732622145"}
