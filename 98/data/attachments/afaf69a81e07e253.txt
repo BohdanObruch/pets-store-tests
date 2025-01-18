@@ -1,0 +1,5 @@
+2025-01-18 01:26:35 INFO Request: PROD/pet
+2025-01-18 01:26:35 INFO INFO Request body: {"id": 1, "category": {"id": 0, "name": "string"}, "name": "Fluffy", "photoUrls": ["string"], "tags": [{"id": 0, "name": "string"}], "status": "sold"}
+2025-01-18 01:26:35 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '150', 'Content-Type': 'application/json'}
+2025-01-18 01:26:35 INFO Response code 200
+2025-01-18 01:26:35 INFO Response: {"id":1,"category":{"id":0,"name":"string"},"name":"Fluffy","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"}
