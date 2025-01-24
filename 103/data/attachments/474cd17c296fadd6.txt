@@ -1,4 +1,0 @@
-2025-01-23 04:28:27 INFO Request: PROD/user/user1
-2025-01-23 04:28:27 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
-2025-01-23 04:28:27 INFO Response code 200
-2025-01-23 04:28:27 INFO Response: {"id":1,"username":"user1","firstName":"first name 1","lastName":"last name 1","email":"email1@test.com","password":"XXXXXXXXXXX","phone":"123-456-7890","userStatus":1}
