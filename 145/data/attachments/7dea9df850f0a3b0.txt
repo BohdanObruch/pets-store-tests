@@ -1,0 +1,10 @@
+2025-03-06 01:43:20 INFO Request: PROD/pet/1/uploadImage
+2025-03-06 01:43:20 INFO INFO Request body: --1705e3204ece39c17c52887f943caad6
+Content-Disposition: form-data; name="file"; filename="test.jpg"
+
+
+--1705e3204ece39c17c52887f943caad6--
+
+2025-03-06 01:43:20 INFO Request headers: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '144', 'Content-Type': 'multipart/form-data; boundary=1705e3204ece39c17c52887f943caad6'}
+2025-03-06 01:43:20 INFO Response code 200
+2025-03-06 01:43:20 INFO Response: {"code":200,"type":"unknown","message":"additionalMetadata: null\nFile uploaded to ./test.jpg, 0 bytes"}
